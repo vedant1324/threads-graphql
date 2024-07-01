@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"node build/index.js",
-    "dev":"ts-watch --Onsuccess \"npm start\"",
+    "start": "node build/index.js",
+    "dev": "ts-watch --Onsuccess \"npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,8 +12,12 @@
   "description": "",
   "dependencies": {
     "@apollo/server": "^4.10.4",
+    "@prisma/adapter-pg": "^5.16.1",
+    "@prisma/client": "^5.16.1",
     "express": "^4.19.2",
-    "graphql": "^16.9.0"
+    "graphql": "^16.9.0",
+    "pg": "^8.12.0",
+    "prisma": "^5.16.1"
   },
   "devDependencies": {
     "@types/typescript": "^2.0.0",
