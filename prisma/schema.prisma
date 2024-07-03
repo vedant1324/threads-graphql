@@ -16,11 +16,11 @@ datasource db {
 model User{
   id String @id @default(uuid())
   firstName String @map("first_name")
-  lastName String @map("last_Name")
+  lastName String? @map("last_Name")
   email String @unique
   password String
   ProfileImageURL String? @map("profile_image_url")
-  salt String 
+  salt String
 
   @@map("users")
 }
